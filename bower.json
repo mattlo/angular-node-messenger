@@ -1,0 +1,25 @@
+{
+	"name": "angular-node-messenger",
+	"main": "angular-node-messenger.js",
+	"version": "1.0.0",
+	"homepage": "https://github.com/mattlo/angular-node-messenger",
+	"authors": [
+		"Matt Lo <mattlo.developer@gmail.com>"
+	],
+	"description": "Node messenger allows the ability for one node to add a classname to another.",
+	"keywords": [
+		"node",
+		"messenger"
+	],
+	"dependencies": {
+		"angular": null
+	},
+	"license": "Apache",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}
