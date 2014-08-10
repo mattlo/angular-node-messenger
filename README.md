@@ -32,8 +32,6 @@ var app = angular.module('MyApp', [
 
 ### Example
 
-The preview sandbox has exposed the `$log` object in the `window` context so you can fiddle the outputs in the console yourself.
-
 Demo: http://fiddle.jshell.net/MattLo/uaowhaww/show/
 
 ## License
