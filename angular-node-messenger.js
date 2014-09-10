@@ -8,15 +8,15 @@
 				$log.info('closing all nodes');
 
 				registry.forEach(function (node) {
-					closeModal(node);
+					setToInactive(node);
 				});
 			});
 
-			function openModal(element) {
+			function setToActive(element) {
 				element.addClass(activeClsName);
 			}
 
-			function closeModal(element) {
+			function setToInactive(element) {
 				element.removeClass(activeClsName);
 			}
 
@@ -30,8 +30,15 @@
 
 					$rootScope.$on('node-open', function (e, id) {
 						if (id === attr.nodeReceiver) {
-							$log.info('open node ' + id);
-							openModal(element);
+							$log.info('opening node ' + id);
+							setToActive(element);
+						}
+					});
+
+					$rootScope.$on('node-close', function (e, id) {
+						if (id === attr.nodeReceiver) {
+							$log.info('closing node', id);
+							setToInactive(element);
 						}
 					});
 
